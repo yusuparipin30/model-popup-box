@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--custom css link-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <button onclick="toggle()" id="button" class="btn">popup</button>
+    </div>
+
+    <div class="popup-container">
+        <div class="popup">
+            <h3>Apakah Anda Suka Dengan Pelayanan Kami</h3>
+
+            <input type="radio" name="buttons" id="btn1">
+            <input type="radio" name="buttons" id="btn2">
+            <input type="radio" name="buttons" id="btn3">
+            <input type="radio" name="buttons" id="btn4">
+            <input type="radio" name="buttons" id="btn5">
+
+            <div class="icons">
+                <label for="btn1">😒</label>
+                <label for="btn2">😉</label>
+                <label for="btn3">😊</label>
+                <label for="btn4">😎</label>
+                <label for="btn5">😘</label>
+            </div>
+
+            <input type="submit" value="submit" class="btn">
+
+            <div onclick="toggle()" id="close">✖</div>
+        </div>
+    </div>
+    
+<script>
+    function toggle(){
+        let toggle = document.querySelector('.popup-container')
+
+        toggle.classList.toggle('toggle');
+    }
+</script>
+
+</body>
+</html>
